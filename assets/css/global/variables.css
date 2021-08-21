@@ -7,8 +7,17 @@
   --cor-branco: #FFFFFF;
   --cor-preto: #000000;
 
+  --cor-roxo: #6C004F;
+  --cor-vermelho: #F24655;
+  --cor-amarelo: #FDB126;
+  --cor-laranja: #FF7D1A;
+  --cor-verde: #1D985B;
+
+  --cor-texto: rgba(255, 255, 255, 0.8);
+
   /* Fontes */
 
-  --fonte: '';
+  --fonte-bold: 'mark-pro-bold';
+  --fonte-regular: 'mark-pro-regular';
 
 }
