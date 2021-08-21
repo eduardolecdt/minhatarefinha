@@ -1,0 +1,10 @@
+/* index <section class="nome"> */
+
+section.nome {
+  display: none;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+}
