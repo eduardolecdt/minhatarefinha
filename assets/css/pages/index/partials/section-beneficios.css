@@ -1,0 +1,87 @@
+/* index <section class="beneficios"> */
+
+section.beneficios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-roxo);
+  padding: 0 0 140px 80px;
+}
+
+section.beneficios img.principal {
+  width: 100%;
+  max-width: 30%;
+  margin-left: auto;
+}
+
+section.beneficios .itens {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 45%;
+}
+
+section.beneficios .itens .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px 0 0 0;
+}
+
+section.beneficios .itens .item .topo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.beneficios .itens .item .topo img {
+  width: 120px;
+  height: 120px;
+  min-width: 120px;
+  min-height: 120px;
+  margin: 0 20px 0 0;
+}
+
+section.beneficios .itens .item .topo h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+}
+
+section.beneficios .itens .item .topo h2 span {
+  color: var(--cor-laranja);
+}
+
+section.beneficios .itens .item p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-texto);
+  line-height: 1.7;
+  padding: 20px 0 0 0;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.beneficios {
+    flex-direction: column;
+    padding: 20px 0 80px 30px;
+  }
+  section.beneficios img.principal {
+    max-width: 80%;
+  }
+  section.beneficios .itens {
+    width: 100%;
+    padding: 0 30px 50px 0;
+  }
+  section.beneficios .itens .item .topo img {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    min-height: 100px;
+  }
+}

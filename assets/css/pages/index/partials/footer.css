@@ -1,7 +1,27 @@
 /* index <footer> */
 
 footer {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-roxo-escuro);
+  padding: 40px 30px;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+footer p {
+  font-family: var(--fonte-bold);
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  color: var(--cor-branco);
+  line-height: 1.7;
+  padding: 0 0 0 15px;
 }
 
 /* Responsivo */

@@ -5,6 +5,18 @@
 /* Partials */
 
 @import './partials/nav.css';
-@import './partials/header.css';
-@import './partials/sectionNome.css';
+@import './partials/section-apresentacao.css';
+@import './partials/section-beneficios.css';
+@import './partials/section-bonus.css';
+@import './partials/section-comprar.css';
+@import './partials/section-conteudo.css';
+@import './partials/section-depoimentos.css';
+@import './partials/section-especiais.css';
+@import './partials/section-exemplo.css';
+@import './partials/section-funciona.css';
+@import './partials/section-garantia.css';
+@import './partials/section-momentos.css';
+@import './partials/section-perguntas.css';
+@import './partials/section-previa.css';
+@import './partials/section-video.css';
 @import './partials/footer.css';

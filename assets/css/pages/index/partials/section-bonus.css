@@ -1,0 +1,59 @@
+/* index <section class="bonus"> */
+
+section.bonus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-amarelo);
+  position: relative;
+  padding: 30px 80px 80px 80px;
+  text-align: center;
+}
+
+section.bonus h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
+  color: var(--cor-roxo);
+  line-height: 1.5;
+}
+
+section.bonus p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-roxo);
+  line-height: 1.7;
+  padding: 10px 0 50px 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+section.bonus .imagens {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+section.bonus .imagens img {
+  width: 25%;
+  padding: 0 5px;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.bonus {
+    padding: 50px 30px 50px 30px;
+  }
+  section.bonus .imagens {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.bonus .imagens img {
+    width: 100%;
+    padding: 0;
+  }
+}

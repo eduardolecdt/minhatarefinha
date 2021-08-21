@@ -1,0 +1,74 @@
+/* index <section class="momentos"> */
+
+section.momentos {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-roxo);
+  background-image: url('../../../../../files/images/index/background-pattern.png');
+  background-size: cover;
+  background-position: center;
+  padding: 80px;
+}
+
+section.momentos img.principal {
+  width: 100%;
+  max-width: 30%;
+}
+
+section.momentos .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 40%;
+  margin-right: auto;
+}
+
+section.momentos .texto h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+}
+
+section.momentos .texto p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-texto);
+  line-height: 1.7;
+  padding: 20px 0 30px 0;
+}
+
+section.momentos .texto button {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  color: var(--cor-branco);
+  background-color: var(--cor-vermelho);
+  border-radius: 50px;
+  padding: 20px 35px;
+  animation: pulsando 1s linear infinite;
+  transition: all 0.3s;
+}
+
+section.momentos .texto button:hover {
+  opacity: 0.7;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.momentos {
+    flex-direction: column-reverse;
+    padding: 80px 30px;
+  }
+  section.momentos img.principal {  
+    max-width: 80%;
+  }
+  section.momentos .texto {
+    width: 100%;
+    padding: 50px 0 0 0;
+  }
+}

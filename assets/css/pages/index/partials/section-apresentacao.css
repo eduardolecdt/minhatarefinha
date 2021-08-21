@@ -1,0 +1,79 @@
+/* index <section class="apresentacao"> */
+
+section.apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-roxo);
+  background-image: url('../../../../../files/images/index/background-pattern.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 150px 0 0 80px;
+}
+
+section.apresentacao img.onda {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+section.apresentacao img.principal {
+  width: 100%;
+  max-width: 50%;
+  margin-top: auto;
+}
+
+section.apresentacao .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 45%;
+  margin-right: auto;
+  padding: 0 80px 150px 0;
+}
+
+section.apresentacao .texto h1 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
+  color: var(--cor-branco);
+  line-height: 1.5;
+}
+
+section.apresentacao .texto p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-texto);
+  line-height: 1.7;
+  padding: 20px 0 0 0;
+}
+
+section.apresentacao .texto h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
+  color: var(--cor-laranja);
+  animation: pulsando 1s linear infinite;
+  padding: 20px 0 0 0;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.apresentacao {
+    flex-direction: column;
+    min-height: auto;
+    padding: 150px 0 0 30px;
+  }
+  section.apresentacao img.principal {
+    max-width: 100%;
+  }
+  section.apresentacao .texto {
+    width: 100%;
+    padding: 0 30px 50px 0;
+  }
+}

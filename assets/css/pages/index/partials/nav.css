@@ -1,10 +1,56 @@
 /* index <nav> */
 
 nav {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  padding: 20px 80px;
+}
+
+nav img {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  min-height: 80px;
+  margin-right: auto;
+}
+
+nav button {
+  font-family: var(--fonte-bold);
+  font-size: clamp(0.8rem, 3vw, 1.1rem);
+  color: var(--cor-branco);
+  margin: 0 0 0 30px;
+  background-color: transparent;
+}
+
+nav button.principal {
+  background-color: var(--cor-vermelho);
+  padding: 15px 25px;
+  border-radius: 50px;
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
+  nav {
+    padding: 20px 30px;
+  }
+  nav button {
+    display: none;
+  }
+  nav button.principal {
+    display: flex;
+  }
+  nav img {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
+  }
 }

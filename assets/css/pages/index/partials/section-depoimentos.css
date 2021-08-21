@@ -1,0 +1,131 @@
+/* index <section class="depoimentos"> */
+
+section.depoimentos {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+section.depoimentos.dois img.onda {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+section.depoimentos.um {
+  background-color: var(--cor-amarelo);
+  padding: 50px 80px 80px 80px;
+}
+
+section.depoimentos.dois {
+  background-color: var(--cor-vermelho);
+  background-image: url('../../../../../files/images/index/background-pattern.png');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 80px 150px 80px;
+}
+
+section.depoimentos .parte {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 45%;
+}
+
+section.depoimentos .parte.direita {
+  margin-left: auto;
+}
+
+section.depoimentos .parte .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 0 0 100px;
+  position: relative;
+}
+
+section.depoimentos .parte .item img {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+  min-height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section.depoimentos .parte .item.espaco {
+  margin: 80px 0 0 0;
+}
+
+section.depoimentos .parte h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.5rem, 3vw, 1.8rem);
+  line-height: 1.5;
+}
+
+section.depoimentos .parte h3 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
+  line-height: 1.5;
+}
+
+section.depoimentos .parte p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  line-height: 1.7;
+  padding: 10px 0 0 0;
+}
+
+section.depoimentos.um .parte h2,
+section.depoimentos.um .parte h3,
+section.depoimentos.um .parte p {
+  color: var(--cor-roxo);
+}
+
+section.depoimentos.dois .parte h2,
+section.depoimentos.dois .parte h3 {
+  color: var(--cor-branco);
+}
+section.depoimentos.dois .parte p {
+  color: var(--cor-texto);
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+  section.depoimentos {
+    flex-direction: column;
+  }
+  section.depoimentos.um {
+    padding: 50px 30px 80px 30px;
+  }
+  section.depoimentos.dois {
+    padding: 80px 30px 80px 30px;
+  }
+  section.depoimentos .parte {
+    width: 100%;
+  }
+  section.depoimentos .parte.direita {
+    margin-left: 0;
+  }
+  section.depoimentos .parte .item {
+    padding: 0 0 0 70px;
+  }
+  section.depoimentos .parte .item img {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+  }
+  section.depoimentos .parte .item.espaco {
+    margin: 50px 0 0 0;
+  }
+}
