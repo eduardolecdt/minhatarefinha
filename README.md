@@ -1,13 +1,14 @@
-# Projeto Minha Tarefinha
+----------------------------------------------------------------------------
 
-Códigos criados por
-[@eduardolecdt](https://instagram.com/eduardolecdt)
+# Lecdt LTDA
 
-Clone o repositório em seu computador usando
-```sh
-git clone https://github.com/eduardolecdt/minhatarefinha.git
-```
+## Códigos criados por @eduardolecdt!
 
-Páginas do Projeto
+:computer: Tecnologia de alto nível
 
-> [Index do Projeto](https://eduardolecdt.github.io/minhatarefinha/)
+## Links úteis
+
+[![Resultado]](https://eduardolecdt.github.io/minhatarefinha)
+[![Designer]](https://instagram.com/eduardolecdt)
+
+----------------------------------------------------------------------------------

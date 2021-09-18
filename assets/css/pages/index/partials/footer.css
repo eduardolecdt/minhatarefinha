@@ -24,6 +24,21 @@ footer p {
   padding: 0 0 0 15px;
 }
 
+footer button {
+  font-family: var(--fonte-bold);
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  color: var(--cor-branco);
+  background-color: var(--cor-vermelho);
+  padding: 10px 25px;
+  border-radius: 50px;
+  margin: 0 0 0 20px;
+  transition: all 0.3s;
+}
+
+footer button:hover {
+  background-color: var(--cor-laranja);
+}
+
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
