@@ -59,6 +59,7 @@ section.depoimentos .parte .item img {
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 50%;
 }
 
 section.depoimentos .parte .item.espaco {
