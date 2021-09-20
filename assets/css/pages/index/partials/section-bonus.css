@@ -42,6 +42,10 @@ section.bonus .imagens img {
   padding: 0 5px;
 }
 
+section.bonus .imagens img.mobile {
+  display: none;
+}
+
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
@@ -55,5 +59,11 @@ section.bonus .imagens img {
   section.bonus .imagens img {
     width: 100%;
     padding: 0;
+  }
+  section.bonus .imagens img.desktop {
+    display: none;
+  }
+  section.bonus .imagens img.mobile {
+    display: flex;
   }
 }
