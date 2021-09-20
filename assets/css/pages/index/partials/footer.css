@@ -24,6 +24,14 @@ footer p {
   padding: 0 0 0 15px;
 }
 
+footer h3 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  color: var(--cor-amarelo);
+  line-height: 1.7;
+  padding: 0 0 0 10px;
+}
+
 footer button {
   font-family: var(--fonte-bold);
   font-size: clamp(0.9rem, 3vw, 1.1rem);
@@ -42,4 +50,11 @@ footer button:hover {
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer h3 {
+    padding: 20px 0;
+  }
 }
