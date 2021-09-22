@@ -1,6 +1,6 @@
-/* index <section class="garantia"> */
+/* index <section class="apresentacao"> */
 
-section.garantia {
+section.apresentacao {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,11 +9,11 @@ section.garantia {
   background-image: url('../../../../../files/images/index/background-pattern.png');
   background-size: cover;
   background-position: center;
-  padding: 120px 120px 160px 80px;
   position: relative;
+  padding: 80px 80px 0 0;
 }
 
-section.garantia img.onda {
+section.apresentacao img.onda {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -22,47 +22,58 @@ section.garantia img.onda {
   pointer-events: none;
 }
 
-section.garantia img.principal {
+section.apresentacao img.principal {
   width: 100%;
-  max-width: 30%;
+  max-width: 35%;
+  margin-top: auto;
 }
 
-section.garantia .texto {
+section.apresentacao .texto {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 40%;
-  margin-left: auto;
+  width: 55%;
+  margin-right: auto;
+  padding: 0 0 110px 100px;
 }
 
-section.garantia .texto h2 {
+section.apresentacao .texto h1 {
   font-family: var(--fonte-bold);
   font-size: clamp(1.5rem, 3vw, 1.8rem);
   color: var(--cor-branco);
   line-height: 1.5;
 }
 
-section.garantia .texto p {
+section.apresentacao .texto p {
   font-family: var(--fonte-regular);
   font-size: clamp(1rem, 3vw, 1.2rem);
-  color: var(--cor-texto);
+  color: var(--cor-branco);
   line-height: 1.7;
-  padding: 20px 0 30px 0;
+  padding: 20px 0 20px 0;
+}
+
+section.apresentacao .texto h2 {
+  font-family: var(--fonte-bold);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  color: var(--cor-branco);
+  padding: 10px 0 0 0;
 }
 
 /* Responsivo */
 
 @media screen and (max-width: 1000px) {
-  section.garantia {
+  section.apresentacao {
     flex-direction: column-reverse;
-    padding: 60px 30px 80px 0;
+    min-height: auto;
+    padding: 60px 30px 0 0;
   }
-  section.garantia img.principal {
-    max-width: 90%;
+  section.apresentacao img.principal {
+    max-width: 80%;
+    margin-right: auto;
   }
-  section.garantia .texto {
+  section.apresentacao .texto {
     width: 100%;
-    padding: 0 0 20px 30px;
+    padding: 0 0 50px 30px;
   }
 }

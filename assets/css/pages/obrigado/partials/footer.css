@@ -5,7 +5,7 @@ footer {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: var(--cor-roxo-escuro);
+  background-color: var(--cor-amarelo);
   padding: 40px 30px;
 }
 
@@ -27,7 +27,7 @@ footer p {
 footer h3 {
   font-family: var(--fonte-bold);
   font-size: clamp(0.9rem, 3vw, 1.1rem);
-  color: var(--cor-amarelo);
+  color: var(--cor-preto);
   line-height: 1.7;
   padding: 0 0 0 10px;
 }
@@ -36,7 +36,7 @@ footer button {
   font-family: var(--fonte-bold);
   font-size: clamp(0.9rem, 3vw, 1.1rem);
   color: var(--cor-branco);
-  background-color: var(--cor-vermelho);
+  background-color: var(--cor-laranja);
   padding: 10px 25px;
   border-radius: 50px;
   margin: 0 0 0 20px;
@@ -44,7 +44,7 @@ footer button {
 }
 
 footer button:hover {
-  background-color: var(--cor-laranja);
+  background-color: var(--cor-vermelho);
 }
 
 /* Responsivo */

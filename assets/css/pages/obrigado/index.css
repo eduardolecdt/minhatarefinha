@@ -1,0 +1,9 @@
+/* index */
+
+@import '../../global/global.css';
+
+/* Partials */
+
+@import './partials/section-apresentacao.css';
+@import './partials/section-amostra.css';
+@import './partials/footer.css';
